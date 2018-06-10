@@ -95,7 +95,7 @@ parser_teses_usp_referencia <- function(links){
 
 # Tipo de funcao: auxiliar
 # Objetivo: Baixar todos os arquivos de interesse e estrutura-los em uma tabela utilizada posteriormente em obter_teses_usp 
-busca_avancada <- function(area_conhecimento =NULL , ano_defesa = NULL){
+busca_avancada <- function(area_conhecimento = NULL, ano_defesa = NULL){
   url <- "http://www.teses.usp.br/index.php"
   if(is.null(ano_defesa) & is.null(area_conhecimento) == F){
     query <- list(
